@@ -10,9 +10,9 @@ st.header("Start and Stop Timer")
 start_stop = st.button("Start Timer")
 
 # Create the timer 
-if start_stop.text == "Start Timer":
+if start_stop == "Start Timer":
     timer = 0 
-    while start_stop.text != "Stop Timer":
+    while start_stop != "Stop Timer":
         timer += 1
         st.write(timer)
     else:
